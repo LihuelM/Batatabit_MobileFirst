@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batatabit</title>
         
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 
 </head>
+
 <body>
     <header>
         <img src="./assets/imgs/logo.svg" alt="Logotipo">
         <div class="header--tittle-container" >
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header--button" >Conoce nuestros planes <span></span></a>
+            <a href="#plans" class="header--button" >Conoce nuestros planes <span></span></a>
         </div>
     </header>
 
@@ -92,48 +94,104 @@
             
         </section>
 
+        <!-- Section-main-product-detail  -->
         <section class="main-product-detail">
             <span class="product-detail--batata-logo"></span>
             <div class="product-detail--tittle">
                 <h2>Creamos un producto sin comparación.</h2>
                 <p>Confiable y diseñado para su uso diario.</p>
             </div>
-            <section class="product-cards--container">
-                <article class="product-detail--card">
-                    <span class="clock"></span>
-                    <p class="product--card-tittle">Tiempo real</p>
-                    <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-                </article>
-            </section>
-            <section class="product-cards--container">
-                <article class="product-detail--card">
-                    <span class="eye"></span>
-                    <p class="product--card-tittle">No hay tasas escondidas</p>
-                    <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-                </article>
-            </section>
-            <section class="product-cards--container">
-                <article class="product-detail--card">
-                    <span class="dollar"></span>
-                    <p class="product--card-tittle">Compara monedas</p>
-                    <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-                </article>
-            </section>
-            <section class="product-cards--container">
-                <article class="product-detail--card">
-                    <span class="check-circle"></span>
-                    <p class="product--card-tittle">Información confiable</p>
-                    <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
-                </article>
+            <section class="body-card--container">
+                <section class="product-cards--container">
+                    <article class="product-detail--card">
+                        <span class="clock"></span>
+                        <p class="product--card-tittle">Tiempo real</p>
+                        <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                    </article>
+                </section>
+                <section class="product-cards--container">
+                    <article class="product-detail--card">
+                        <span class="eye"></span>
+                        <p class="product--card-tittle">No hay tasas escondidas</p>
+                        <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                    </article>
+                </section>
+                <section class="product-cards--container">
+                    <article class="product-detail--card">
+                        <span class="dollar"></span>
+                        <p class="product--card-tittle">Compara monedas</p>
+                        <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
+                    </article>
+                </section>
+                <section class="product-cards--container">
+                    <article class="product-detail--card">
+                        <span class="check-circle"></span>
+                        <p class="product--card-tittle">Información confiable</p>
+                        <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+                    </article>
+                </section>
             </section>
         </section>
 
-        <section></section>
+        <!-- Section-main-bitcoin-img-container -->
+        <section class="bitcoin-img-container">
+            <h2>Conócelo hoy.</h2>
+        </section>
 
-        <section></section>
+        <!-- Section-main-plans-container -->
+        <section id="plans" class="main-plans-container">
+            <div class="plans-tittle">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+
+            <section class="plans-container--slider">
+                <article class="plans-container--clard">
+                    <p class="recommended" id="recommended">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--tittle">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span> 99</p>
+                        <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca" id="recommended-button">Escoger este <span class="basic"></span></button>
+                    </div>
+                </article>
+
+                <article class="plans-container--clard">
+                    <p class="recommended" id="basic">Básico</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--tittle">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span> 129</p>
+                        <p class="plan-card--saving">* Ahorras $109 comparado al plan mensual.</p>
+                        <button class="plan-card--ca" id="basic-button">Escoger este <span class="basic-span"></span></button>
+                    </div>
+                </article>
+                
+                <article class="plans-container--clard">
+                    <p class="recommended" id="premium">Premuim</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--tittle">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span> 149</p>
+                        <p class="plan-card--saving">* Ahorras $80 comparado al plan mensual.</p>
+                        <button class="plan-card--ca" id="premium-button">Escoger este <span class="premium-span"></span></button>
+                    </div>
+                </article>
+            </section>
+            
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <ul>
+                <li> <a href="#">Linkedin</a> </li>
+                <li> <a href="#">Crunchbase</a> </li>
+                <li> <a href="#">Hackernews</a> </li>
+            </ul>
+        </section class="right">
+        <section>
+            <img src="./assets/imgs/logo-footer.svg" alt="Logo de Batatabit">
+        </section>
+    </footer>
 
 </body>
 </html>
