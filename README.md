@@ -1,8 +1,9 @@
-﻿# Batatabit
+# Batatabit
 
-**MobileFirst**   :tw-1f4f2:
+**MobileFirst**   📲
 
 Frontend de un sitio web totalmente responsivo partiendo de su wireframe. Construido para que se adapte a cualquier dispositivo de los usuarios, partiendo de los fundamentos de mobile first.
+
 
 
 ------------
